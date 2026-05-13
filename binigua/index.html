@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kesayanganku</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #8b0000; 
+            --bg-color: #fcf8f5;
+            --text-dark: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Dancing Script', cursive;
+            color: var(--primary);
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .parallax {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/foto/foto5.jpeg');
+            min-height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .parallax h1 {
+            font-size: 4rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin-bottom: 10px;
+        }
+
+        .parallax p {
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1.2s ease-out;
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .letter-box {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 50px;
+            border-top: 5px solid var(--primary);
+            text-align: left;
+        }
+
+        .letter-box h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .gallery-title {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+
+        .grid-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .grid-wrapper img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+        }
+
+        .grid-wrapper img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .music-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            backdrop-filter: blur(5px);
+        }
+
+        .music-container p {
+            margin: 0;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        audio {
+            height: 30px;
+        }
+
+        footer {
+            background-color: var(--text-dark);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        footer h3 {
+            color: #ffb3c6;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="music-container">
+        <p>🎵 Play me</p>
+        <audio controls autoplay loop>
+            <source src="/musik/lover (1).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <section class="parallax">
+        <h1>Selamat Ulang Tahun, Semestaku</h1>
+        <p>Gulir perlahan untuk membaca ceritaku tentangmu...</p>
+    </section>
+
+    <div class="container">
+        
+        <div class="hidden letter-box">
+            <h2>Bab 1: Tentang Kehadiranmu</h2>
+            <p>Halo, Sayang.</p>
+            <p>Hari ini adalah hari yang paling aku syukuri sepanjang tahun. Kenapa? Karena di tanggal ini, manusia yang paling berharga buat aku lahir ke dunia. Manusia yang akhirnya bikin aku paham apa arti dari kalimat "rumah bukan selalu tentang tempat, tapi tentang seseorang."</p>
+            <p>Aku ingat betul momen-momen pertama kita. Dulu aku cuma bisa memandangmu, sekarang aku punya hak penuh untuk menggenggam tanganmu. Rasanya masih seperti mimpi, tapi setiap kali aku lihat kamu tersenyum, aku sadar ini adalah kenyataan paling indah yang pernah aku jalani.</p>
+        </div>
+
+        <div class="hidden letter-box" style="border-top-color: #ff9999;">
+            <h2>Bab 2: Hal yang Aku Suka Darimu</h2>
+            <p>Kalau ditanya apa yang aku suka dari kamu, jawabanku bakal butuh satu buku penuh. Tapi kalau harus diringkas:</p>
+            <p>Aku suka caramu bercerita tentang hal-hal kecil yang kamu lewati hari ini. Aku suka matamu kalau lagi ketawa lepas. Aku suka sifat keras kepalamu, bawelmu, cemberutmu, dan caramu manja ke aku. Kamu sempurna di mataku, bahkan dengan segala ketidaksempurnaanmu.</p>
+            <p>Kamu adalah alasanku untuk bangun pagi dengan semangat, dan alasanku untuk pulang secepatnya. Kamu adalah tempat istirahatku yang paling nyaman dari kerasnya dunia.</p>
+        </div>
+
+        <div class="parallax hidden" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('bg-paralax2.jpg'); min-height: 50vh; border-radius: 15px; margin: 40px 0;">
+            <h1 style="font-size: 3rem;">Kamu adalah karya seni terindah yang pernah kutatap.</h1>
+        </div>
+
+        <h2 class="gallery-title hidden">Ribuan Bingkai Kamu</h2>
+        <p class="hidden">Beberapa potongan waktu yang berhasil aku abadikan. Sisanya, tersimpan rapi di kepalaku.</p>
+        
+        <div class="grid-wrapper hidden">
+            <img src="/foto/foto1.jpg" alt="Momen Indah 1">
+            <img src="/foto/foto7.jpg" alt="Momen Indah 2">
+            <img src="/foto/foto3.jpg" alt="Momen Indah 3">
+            <img src="/foto/foto9.jpeg" alt="Momen Indah 4">
+            <img src="/foto/foto2.jpg" alt="Momen Indah 5">
+            <img src="/foto/foto8.jpg" alt="Momen Indah 6">
+        </div>
+
+        <div class="hidden letter-box">
+            <h2>Bab 3: Doa & Harapanku</h2>
+            <p>Selamat bertambah usia, Sayangku. Di usiamu yang baru ini, doaku sangat sederhana: Aku ingin kamu selalu bahagia. Aku ingin semua sedihmu menyingkir, dan semua mimpimu terwujud satu per satu.</p>
+            <p>Tolong terus jalan berdampingan sama aku ya? Mari kita hadapi dunia ini sama-sama. Jangan pernah capek sama aku. Kalau kamu butuh sandaran, bahuku selalu siap buat kamu 24/7.</p>
+            <p>Aku sayang kamu. Sangat amat sayang. Lebih dari kata-kata yang bisa aku tulis di sini.</p>
+            <br>
+            <p style="text-align: right; font-style: italic;">Seseorang yang paling mencintaimu,</p>
+            <h3 style="text-align: right; margin-top: 10px;">(PUTRA FERDIANATA)</h3>
+        </div>
+
+    </div>
+
+    <footer>
+        <h3>I Love You To The Moon And Back 🌙</h3>
+        <p style="margin-bottom: 0; margin-top: 10px; font-size: 0.9rem;">Dibuat dengan segenap cinta di tahun 2026.</p>
+    </footer>
+
+    <script>
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, {
+            threshold: 0.1 
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+
+</body>
+</html>
